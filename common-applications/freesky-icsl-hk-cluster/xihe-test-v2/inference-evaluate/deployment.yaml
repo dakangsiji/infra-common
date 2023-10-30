@@ -50,11 +50,11 @@ spec:
         - --enable_debug=false
         env:
         - name: INFERENCE_IMAGE
-          value: swr.cn-north-4.myhuaweicloud.com/opensourceway/mindspore/xihe-inference-evaluate:sec-63c0fe
+          value: swr.cn-north-4.myhuaweicloud.com/opensourceway/mindspore/xihe-inference-evaluate:sec-fdcae9
         - name: INFERENCE_INIT_IMAGE
-          value: swr.cn-north-4.myhuaweicloud.com/opensourceway/mindspore/xihe-inference-evaluate-init:sec-63c0fe
+          value: swr.cn-north-4.myhuaweicloud.com/opensourceway/mindspore/xihe-inference-evaluate-init:sec-fdcae9
         - name: CLOUD_IMAGE
-          value: swr.cn-north-4.myhuaweicloud.com/opensourceway/mindspore/mindspore-jupyter-cpu:dev-a90c9c
+          value: swr.cn-north-4.myhuaweicloud.com/opensourceway/mindspore/mindspore-jupyter-cpu:sec-fdcae9
         image: swr.cn-north-4.myhuaweicloud.com/opensourceway/xihe/xihe:latest
         imagePullPolicy: IfNotPresent
         name: inference-evaluate
