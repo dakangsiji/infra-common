@@ -63,7 +63,12 @@ spec:
             - mountPath: /var/lib/ds/application.properties
               subPath: application_properties
               name: datastat-server-secrets-volume
+            - mountPath: /var/lib/ds/om-data/obs
+              name: pvc-obs-datastat-server
       volumes:
         - name: datastat-server-secrets-volume
           secret:
             secretName: datastat-server-secrets
+        - name: pvc-obs-datastat-server
+          persistentVolumeClaim:
+            claimName: pvc-obs-datastat-server
